@@ -5,8 +5,7 @@ form.login {
 
 body {
 background-color: white;
-/* background: url("https://www.jsmuckercontracting.com/wp-content/uploads/2020/01/commercial-roof-replacement.jpg") no-repeat; */
-/* height: 1200px; */
+
 }
 .container {
   height: 100%;
@@ -93,27 +92,12 @@ header img {
 .btn1 {
   background-color: crimson !important;
   color: white !important;
-  /* align: center;
-  margin-top: 50px; */
-  /* margin-left: 300px;
-
-  color: crimson;
-  position: fixed; */
-  /* bottom: 0; */
+ 
 }
 .btn2 {
   background-color: crimson !important;
   color: white !important;
-  /* margin-left: 900px;
-  margin-top: 350px;
-
-  position: fixed; */
-  /* bottom: 0; */
-}
-/* .right {
-  margin-left: 0px !important;
-  padding-right: 0px !important;
-} */
+  
 
 .navbar-brand {
   float: left;
