@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
+  <link href="stylesheets/style2.css" rel="stylesheet">
+  <title>NJS Roofing Report PDF</title>
+</head>
+
+<body>
+  <header>
+    <img src="NJS-header.jpg">
+  </header>
+
+  <div class="wrapper"></div>
+
+  <div class="container" id="report">
+    <div class="row">
+      <h1>NJS Roofing Report</h1>
+    </div>
+    <div style="width:100%" style="margin:auto">
+      <button id="print" onclick="myFunction()">Print</button>
+      <script>function myFunction() { window.print(); }</script>
+    </div>
+
+    <div class="row" style="width:100%;">
+
+      <table style="width:100%;">
+        <tr>
+          <th colspan="4">Name</th>
+          <th colspan="4">Email</th>
+          <th colspan="4">Telephone</th>
+          <th colspan="4">Submit Date</th>
+        </tr>
+        <tr>
+          <th colspan="4">City</th>
+          <th colspan="4">State</th>
+          <th colspan="12">Notes</th>
+        </tr>
+      </table>
+
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <img src="https://www.harrisgeospatial.com/Portals/0/images/HG_Aerial_ThumbPic3.jpg">
+      </div>
+    </div>
+  </div>
+
+</body>
+<div class="footer">
+  <p>NJS Roofing Inc. Copyright © 2020</p>
+</div>
+
+</html>
