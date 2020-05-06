@@ -13,3 +13,11 @@ CREATE TABLE villagers (
   id INTEGER NOT NULL,
   PRIMARY KEY (id)
 );
+
+LOAD DATA INFILE 'C:\Users\Michael%20Baska\bootcamp\homework\finalproject\acnhVillagers.csv' 
+INTO TABLE villagers 
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+
+SELECT * FROM villagers;
