@@ -1,52 +1,60 @@
 
-form.login {
-  margin-top: 50px;
+body{
+
+    margin: 10px;
+    padding: 10px;
+    /* background: url(images/1236376.png); */
+    background-size: cover;
+    
+    
 }
 
-body {
-background-color: rgb(75, 75, 75);
-background: url("https://www.mckinney-usa.com/wp-content/uploads/2018/02/chesterfield-county.jpg") no-repeat;
-filter: blur(10)
+h1 {
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+  
+}
+.form-inline {  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
 }
 
-h2 {
-  color: white !important;
-  text-shadow: 0 0 5px black;
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+.container {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  text-align: center;
+  align-content: center;
 }
 
-p {
-  color: white !important;
-  font-size: 24px;
-  text-shadow: 0 0 5px black;
-}
-
-label {
-  color: white !important;
-  font-size: 24px;
-  text-shadow: 0 0 5px black;
-}
-
-a {
-  color: rgb(69, 255, 1) !important;
-  font-size: 24px;
-  text-shadow: 0 0 5px black;
-}
-header {
-  overflow: hidden;
-}
-header img {
-  margin-left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  height: 100%;
-}
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: rgb(0, 179, 255);
+   
+/* .form-inline button {
+  padding: 10px 20px;
+  background-color: gray;
+  border: 1px solid #ddd;
   color: white;
+  cursor: pointer;
+  float: center;
+} */
+
+.startbar{
   text-align: center;
 }
+
+
+    
+
+
