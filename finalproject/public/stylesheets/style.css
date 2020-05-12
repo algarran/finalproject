@@ -1,11 +1,11 @@
 /* Villager Page */
 
 body{
-    margin: 10px;
-    padding: 10px;
-    background-size: cover; 
-    font-family: Arial;
-    color: white; 
+  margin: 10px;
+  padding: 10px;
+  background-size: cover; 
+  font-family: Arial;
+  color: white; 
 }
 
 h1 {
@@ -53,6 +53,15 @@ h1 {
   overflow-x: hidden;
   padding-top: 20px;
 }
+.splitr {
+  height: 100%;
+  width: 75%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
 
 .left {
   left: 0;
@@ -78,7 +87,7 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 500px;
+  width: 800px;
 }
 
 .centered img {
@@ -98,112 +107,104 @@ h1 {
   margin: 4px 2px;
   cursor: pointer;
 }
-                * {
-                    box-sizing: border-box;
-                }
 
-                ul {
-                    list-style-type: none;
-                }
+* {
+box-sizing: border-box;
+}
 
-                body {
-                    font-family: Verdana, sans-serif;
-                }
+ul {
+  list-style-type: none;
+}
 
-                .month {
-                    padding: 70px 25px;
-                    width: 100%;
-                    background: #1abc9c;
-                    text-align: center;
-                }
+body {
+  font-family: Verdana, sans-serif;
+}
 
-                .month ul {
-                    margin: 0;
-                    padding: 0;
-                }
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center;
+}
 
-                .month ul li {
-                    color: white;
-                    font-size: 20px;
-                    text-transform: uppercase;
-                    letter-spacing: 3px;
-                }
+.month ul {
+  margin: 0;
+  padding: 0;
+}
 
-                .month .prev {
-                    float: left;
-                    padding-top: 10px;
-                }
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
 
-                .month .next {
-                    float: right;
-                    padding-top: 10px;
-                }
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
 
-                .weekdays {
-                    margin: 0;
-                    padding: 10px 0;
-                    background-color: #ddd;
-                }
+.month .next {
+  float: right;
+  padding-top: 0px;
+}
 
-                .weekdays li {
-                    display: inline-block;
-                    width: 11.6%;
-                    color: #666;
-                    text-align: center;
-                }
+.weekdays {
+  margin: 0;
+  padding: 10px 0px;
+  background-color: #ddd;
+}
 
-                .days {
-                    padding: 10px 0;
-                    background: #eee;
-                    margin: 0;
-                }
+.weekdays li {
+    display: inline-block;
+    width: 11.6%;
+    color: #666;
+    text-align: center;
+}
 
-                .days li {
-                    list-style-type: none;
-                    display: inline-block;
-                    width: 13.6%;
-                    text-align: center;
-                    margin-bottom: 5px;
-                    font-size: 12px;
-                    color: #777;
-                }
+.days {
+  padding: 10px 0;
+  background: #eee;
+   margin: 0;
+}
 
-                .days li .active {
-                    padding: 0px;
-                    background: #1abc9c;
-                    color: white !important
-                }
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #777;
+}
 
-                /* Add media queries for smaller screens */
-                @media screen and (max-width:720px) {
+.days li .active {
+  padding: 0px;
+  background: #1abc9c;
+  color: white !important
+}
 
-                    .weekdays li,
-                    .days li {
-                        width: 13.1%;
-                    }
-                }
+@media screen and (max-width:720px) {
+  .weekdays li,
+  .days li {
+  width: 13.1%;
+  }
+}
 
-                @media screen and (max-width: 420px) {
+@media screen and (max-width: 420px) {
+  .weekdays li,
+  .days li {
+  width: 12.5%;
+  }
 
-                    .weekdays li,
-                    .days li {
-                        width: 12.5%;
-                    }
+  .days li .active {
+    padding: 2px;
+  }
+}
 
-                    .days li .active {
-                        padding: 2px;
-                    }
-                }
-
-                @media screen and (max-width: 290px) {
-
-                    .weekdays li,
-                    .days li {
-                        width: 0%;
-                    }
-                }
-
-
-    
-
-
+@media screen and (max-width: 290px) {  
+  .weekdays li,
+  .days li {
+  width: 0%;
+  }
+}
