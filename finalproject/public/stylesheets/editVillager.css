@@ -1,0 +1,41 @@
+.container{
+    background-image: url('ACVillagerPage.jpg');
+}
+
+.villagerView{
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+h2{
+    font-size: 30px;
+    color: aliceblue;
+    text-align: center;
+}
+.row{
+    margin-left: 100px;
+    padding-inline: 25px;
+    align-content: center;
+}
+.column {
+    padding-inline: 25px;
+    margin: 25px;
+    float: left;
+    width: 10%;
+    padding: 10px;
+    height: 200px;
+}
+h3{
+    text-align: center;
+    text-emphasis: bold;
+}
+p{
+    text-align: center;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}  
