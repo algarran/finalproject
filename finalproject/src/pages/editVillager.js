@@ -1,18 +1,19 @@
 import React from "react";
 
 function EditVillager() {
+  // insert FOR loop here.
   return (
     <div>
       <div>
         <div>
           <h2>Add Your Villagers!</h2>
         </div>
-        <div class="searchBox">
-          <input class="input" type="text" placeholder="Search For a Villager"/>
+        <div className="searchBox">
+          <input className="input" type="text" placeholder="Search For a Villager"/>
         </div>
-        <div class="searchBtn">
-          <button class="button">Search</button>
-          <a href="login.html" class="button">Link Button</a>
+        <div className="searchBtn">
+          <button className="button">Search</button>
+          <a href="login.html" className="button">Link Button</a>
         </div>
       </div>
       <h2>VILLAGERS</h2>
