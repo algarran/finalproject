@@ -4,7 +4,7 @@ var connection = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
   password : 'yourRootPassword',
-  database : 'villager_db'
+  database : 'villagers_db'
 });
 
 connection.connect(function(err){
