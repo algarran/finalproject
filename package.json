@@ -3,8 +3,24 @@
   "version": "1.0.0",
   "description": "Project 3",
   "main": "server.js",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "express": "^4.17.1",
+    "if-env": "^1.0.4",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.3",
+    "react": "^16.13.1"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "seed": "node scripts/seedDB.js",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -18,4 +34,3 @@
   },
   "homepage": "https://github.com/algarran/finalproject#readme"
 }
-
