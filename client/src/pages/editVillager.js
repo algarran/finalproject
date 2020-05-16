@@ -1,10 +1,8 @@
+import React from "react";
 var mysql = require("mysql");
 var express = require("express");
-import React from "react";
 
 var app = express();
-
-var PORT = process.env.PORT || 3000;
 
 var connection = mysql.createConnection({
   host: "localhost",
@@ -24,7 +22,7 @@ connection.connect(function(err){
 });
 
 function EditVillager() {
-  // insert FOR loop here.
+  // FOR loop
   app.get("/", function (req, res) {
     connection.query("SELECT * FROM villagers", function (err, result){
       if (err) throw err;
