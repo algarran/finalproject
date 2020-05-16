@@ -43,7 +43,7 @@ function Calendar() {
                         <li className="next">&#10095;</li>
                         <li>
                             May<br/>
-                            <span style="font-size:28px">2020</span>
+                            <span id="month">2020</span>
                         </li>
                     </ul>
                 </div>
