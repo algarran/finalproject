@@ -1,11 +1,12 @@
 /* Villager Page */
 
 body{
-  margin: 10px;
-  padding: 10px;
+  margin: 0px;
+  padding: 10px 0px 100px 0px;
   background-size: cover; 
   font-family: Arial;
   color: white; 
+  background-color: seagreen;
   background-image: url('../images/1236376.png');
 }
 
@@ -31,13 +32,15 @@ h1 {
 }
 .container {
   vertical-align: middle;
-  margin: 5px 10px 5px 0;
   padding: 10px;
-  background-color: #fff;
   border: 1px solid #ddd;
   text-align: center;
   align-content: center;
 }
+
+/* .notifications{
+  background-color: none;
+} */
 
 .startbar{
   text-align: center;

@@ -13,7 +13,7 @@ function EditVillager() {
         </div>
         <div className="searchBtn">
           <button className="button">Search</button>
-          <a href="login.html" className="button">Link Button</a>
+          <a href="/calendar" className="button">Calendar</a>
         </div>
       </div>
       <h2>VILLAGERS</h2>

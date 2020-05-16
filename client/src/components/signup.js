@@ -5,7 +5,7 @@ function Signup() {
 
     <div>
       <div class="container">
-        <div class="notification">
+        <div>
           <h1>Signup Form</h1>
         </div>
       </div>
