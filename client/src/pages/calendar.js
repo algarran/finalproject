@@ -32,7 +32,7 @@ function Calendar() {
 
     <div className="splitr right">
         <div className="centered1">
-            <a href="editVillager.html" className="button">Link Button</a>
+            <a href="/editVillager" className="button">Link Button</a>
             <br/>
             <br/>
             <h1>Calendar</h1>

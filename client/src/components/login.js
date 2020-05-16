@@ -5,7 +5,7 @@ function Login() {
 
     <div>
       <div class="container">
-        <div class="notification">
+        <div>
           <h1>Login Form</h1>
         </div>
       </div>
@@ -18,7 +18,7 @@ function Login() {
           <label for="pwd">Password:</label>
           <input type="password" id="pwd" placeholder="Enter password" name="pswd" />
           <button type="submit">Submit</button>
-      Or Signup <a href="calendar.html">here
+      Or Signup <a href="/signup">here
       </a>
         </div>
       </div>
