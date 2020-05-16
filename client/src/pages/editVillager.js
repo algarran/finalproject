@@ -22,11 +22,27 @@ connection.connect(function(err){
   console.log("connected as id " + connection.threadId);
 
 });
-app.get("/", function (req, res) {
-  connection.query()
-})
+
 function EditVillager() {
   // insert FOR loop here.
+  app.get("/", function (req, res) {
+    connection.query("SELECT * FROM villagers", function (err, result){
+      if (err) throw err;
+      var html = "<h1> Search for a Villager </h1>";
+  
+      html += "<ul>";
+  
+      for (var i = 0; i < result.length; i++){
+        html += "<li><p> " + result[i].villager_name + "</p>";
+        html +="<p> " + result[i].villager_birthday + "</p>";
+  
+      }
+      html += "</ul>";
+  
+      res.send(html);
+  
+      });
+  });
   return (
     <div>
       <div>
@@ -38,10 +54,9 @@ function EditVillager() {
         </div>
         <div className="searchBtn">
           <button className="button">Search</button>
-          <a href="login.html" className="button">Link Button</a>
+          <a href="/calendar" className="button">Calendar</a>
         </div>
       </div>
-      <h2>VILLAGERS</h2>
       <div id="agrippa"></div>
     </div>
   );
