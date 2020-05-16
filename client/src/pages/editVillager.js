@@ -1,7 +1,48 @@
+var mysql = require("mysql");
+var express = require("express");
 import React from "react";
+
+var app = express();
+
+var PORT = process.env.PORT || 3000;
+
+var connection = mysql.createConnection({
+  host: "localhost",
+  port:
+  user: "",
+  password:"",
+  database: "villagers_db"
+});
+
+connection.connect(function(err){
+  if (err) {
+    console.error("error connecting: " + err.stack);
+    return;
+  }
+  console.log("connected as id " + connection.threadId);
+
+});
 
 function EditVillager() {
   // insert FOR loop here.
+  app.get("/", function (req, res) {
+    connection.query("SELECT * FROM villagers", function (err, result){
+      if (err) throw err;
+      var html = "<h1> Search for a Villager </h1>";
+  
+      html += "<ul>";
+  
+      for (var i = 0; i < result.length; i++){
+        html += "<li><p> " + result[i].villager_name + "</p>";
+        html +="<p> " + result[i].villager_birthday + "</p>";
+  
+      }
+      html += "</ul>";
+  
+      res.send(html);
+  
+      });
+  });
   return (
     <div>
       <div>
@@ -13,10 +54,9 @@ function EditVillager() {
         </div>
         <div className="searchBtn">
           <button className="button">Search</button>
-          <a href="login.html" className="button">Link Button</a>
+          <a href="/calendar" className="button">Calendar</a>
         </div>
       </div>
-      <h2>VILLAGERS</h2>
       <div id="agrippa"></div>
     </div>
   );
