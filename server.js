@@ -3,6 +3,7 @@ var express = require("express");
 
 var connection = mysql.createConnection({
   host     : 'localhost',
+  // port: 3306,
   user     : 'root',
   password : 'Jordan923',
   database : 'villagers_db'
