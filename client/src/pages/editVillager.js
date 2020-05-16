@@ -1,11 +1,12 @@
 import React from "react";
 
 function EditVillager() {
-  var db = require("../../../models/villagers");
+  var db = require("../models/villagers");
+  console.log(db());
   // insert FOR loop here.
-  for(var i = 0; i > 391; i++) {
-    console.log(db[i]);
-  }
+  // for(var i = 0; i > 391; i++) {
+  //   console.log(db[i]);
+  // }
   return (
     <div>
       <div>
