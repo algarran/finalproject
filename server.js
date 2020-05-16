@@ -1,4 +1,5 @@
-const mysql = require("mysql");
+var express = require("express");
+
 
 var connection = mysql.createConnection({
   host     : 'localhost',
@@ -7,15 +8,17 @@ var connection = mysql.createConnection({
   database : 'villagers_db'
 });
 
-connection.connect(function(err){
-  if(!err){
-    console.log(`Connected to database thread: ${connection.threadId}`);
-  }
-});
+var app = express();
+var PORT = process.env.PORT || 8080;
 
-connection.query("SELECT * FROM villagers", function(err, res){
-  if(err) throw err;
-  res.forEach(txt=>{
-      console.log(`Name: ${txt.villager_name} bithday: ${txt.villager_birthday}`);
+
+var db = require("./models");
+
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+db.sequelize.sync({ force: true }).then(function() {
+  app.listen(PORT, function() {
+    console.log("App listening on PORT " + PORT);
   });
 });
