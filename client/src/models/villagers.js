@@ -4,13 +4,13 @@ const database = new Sequelize({
 });
 
 var Villagers = database.define("Villagers", {
-  villager_name: Sequilize.STRING,
-  villager_species: Sequilize.STRING,
-  villager_gender: Sequilize.STRING,
-  villager_personality: Sequilize.STRING,
-  villager_birthday: Sequilize.STRING,
-  villager_style_aleph: Sequilize.STRING,
-  villager_style_beth: Sequilize.STRING
+  villager_name: Sequelize.STRING,
+  villager_species: Sequelize.STRING,
+  villager_gender: Sequelize.STRING,
+  villager_personality: Sequelize.STRING,
+  villager_birthday: Sequelize.STRING,
+  villager_style_aleph: Sequelize.STRING,
+  villager_style_beth: Sequelize.STRING
 });
 
 export default Villagers;

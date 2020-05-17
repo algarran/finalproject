@@ -10,7 +10,8 @@
     "mysql": "^2.18.1",
     "nodemon": "^2.0.3",
     "react": "^16.13.1",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "sequelize": "^5.21.9"
   },
   "devDependencies": {},
   "scripts": {
