@@ -8,7 +8,7 @@ var connection = mysql.createConnection({
   host: "localhost",
   port: 3306,
   user: "root",
-  password:"Jordan923",
+  password:"yourRootPassword",
   database: "villagers_db"
 });
 
@@ -22,22 +22,24 @@ connection.connect(function(err){
 });
 
 function EditVillager() {
-  // FOR loop
+  var db = require("../models/villagers");
+  console.log(db());
+  // insert FOR loop here.
   app.get("/", function (req, res) {
     connection.query("SELECT * FROM villagers", function (err, result){
       if (err) throw err;
-      var html = "<h1> Search for a Villager </h1>";
   
-      html += "<ul>";
+      var html = "<ul>";
   
       for (var i = 0; i < result.length; i++){
         html += "<li><p> " + result[i].villager_name + "</p>";
-        html +="<p> " + result[i].villager_birthday + "</p>";
+        html +="<p> " + result[i].villager_birthday + "</p></li>";
   
       }
       html += "</ul>";
   
-      res.send(html);
+      var agrippa = document.getElementById("agrippa");
+      agrippa.appendChild(html);
   
       });
   });
