@@ -8,11 +8,7 @@ var connection = mysql.createConnection({
   host: "localhost",
   port: 3306,
   user: "root",
-<<<<<<< HEAD
   password:"yourRootPassword",
-=======
-  password:"Jordan923",
->>>>>>> 9c0450d9af95ffe276f90d2a93f1710ae2046df2
   database: "villagers_db"
 });
 
@@ -26,13 +22,9 @@ connection.connect(function(err){
 });
 
 function EditVillager() {
-<<<<<<< HEAD
   var db = require("../models/villagers");
   console.log(db());
   // insert FOR loop here.
-=======
-  // FOR loop
->>>>>>> 9c0450d9af95ffe276f90d2a93f1710ae2046df2
   app.get("/", function (req, res) {
     connection.query("SELECT * FROM villagers", function (err, result){
       if (err) throw err;
