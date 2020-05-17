@@ -11,7 +11,11 @@
     "nodemon": "^2.0.3",
     "react": "^16.13.1",
     "react-router-dom": "^5.2.0",
+<<<<<<< HEAD
     "sequelize": "^5.21.9"
+=======
+    "serve": "^11.3.0"
+>>>>>>> 9c0450d9af95ffe276f90d2a93f1710ae2046df2
   },
   "devDependencies": {},
   "scripts": {
