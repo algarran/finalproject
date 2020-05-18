@@ -8,12 +8,10 @@ import editVillager from "./pages/editVillager";
 function App() {
   return (
     <Router>
-      <div>
         <Route exact path="/" component={Login} />
         <Route exact path="/signup" component={Signup} />
         <Route exact path="/calendar" component={Calendar} />
         <Route exact path="/editVillager" component={editVillager} />
-      </div>
     </Router>
   );
 }

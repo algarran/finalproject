@@ -22,9 +22,6 @@ connection.connect(function(err){
 });
 
 function EditVillager() {
-  var db = require("../models/villagers");
-  console.log(db());
-  // insert FOR loop here.
   app.get("/", function (req, res) {
     connection.query("SELECT * FROM villagers", function (err, result){
       if (err) throw err;
@@ -32,8 +29,8 @@ function EditVillager() {
       var html = "<ul>";
   
       for (var i = 0; i < result.length; i++){
-        html += "<li><p> " + result[i].villager_name + "</p>";
-        html +="<p> " + result[i].villager_birthday + "</p></li>";
+        html += "<li><p>" + result[i].villager_name + "</p>";
+        html +="<p>" + result[i].villager_birthday + "</p></li>";
   
       }
       html += "</ul>";
