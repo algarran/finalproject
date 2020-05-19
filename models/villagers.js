@@ -26,7 +26,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     villager_style_beth: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     }
   });
   return Villagers;
